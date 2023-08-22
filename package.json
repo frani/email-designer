@@ -1,7 +1,7 @@
 {
   "name": "email-designer",
   "description": "Zero-Dependencies Tool to create HTML emails in a modular and simple way",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "homepage": "https://frani.github.io/email-designer",
   "author": "frani <franinnocenti@gmail.com>",
