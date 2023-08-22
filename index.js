@@ -21,14 +21,21 @@
  * @returns {String} HTML
  */
 const createHTML = (
-  blocks = [{ name: "base/sample", params: { text: "hello world" } }]
+  blocks = [{ name: "base/sample", params: { text: "hello world" } }],
+  layout = "base/layout",
+  style = ""
 ) => {
-  console.log({ blocks });
   const renders = blocks.map((block) => {
     return render({ name: block.name, params: block.params });
   });
-  const rendered = renders.join("");
-  return rendered;
+  const html = render({
+    name: layout,
+    params: {
+      content: renders.join(""),
+      style,
+    },
+  });
+  return html;
 };
 
 const render = ({ name = "base/sample", params = { text: "hello world" } }) => {
