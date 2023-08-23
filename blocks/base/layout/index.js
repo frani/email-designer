@@ -339,6 +339,11 @@ const render = ({ content = "", style = "" }) => {
     </style>
   </head>
   <body>
+  <center
+      class="wrapper"
+      data-link-color="#1188E6"
+      data-body-style="font-size:15px; font-family:arial,helvetica,sans-serif; color:#000000; background-color:#F6f6f6;"
+    >
     <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
       <tr>
@@ -353,6 +358,7 @@ const render = ({ content = "", style = "" }) => {
         <td>&nbsp;</td>
       </tr>
     </table>
+    </center>
   </body>
 </html>
 

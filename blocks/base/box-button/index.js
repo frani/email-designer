@@ -1,4 +1,8 @@
-const render = ({ otp = "123 456" }) => {
+const render = ({
+  text = "",
+  buttonTitle = "Click Me",
+  buttonURL = "https://www.npmjs.com/package/email-designer",
+}) => {
   const rendered = `
    <!-- START CENTERED WHITE CONTAINER -->
             <table role="presentation" class="main">
@@ -8,6 +12,10 @@ const render = ({ otp = "123 456" }) => {
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                       <td>
+                      </br>
+                        ${text}
+                        </br>
+                        </br>
                         <table
                           role="presentation"
                           border="0"
@@ -26,7 +34,13 @@ const render = ({ otp = "123 456" }) => {
                                 >
                                   <tbody>
                                     <tr>
-                                      <th style="width: 15%; font-size: 5rem;">${otp}</th>
+                                      <td>
+                                        <a
+                                          href="${buttonURL}"
+                                          target="_blank"
+                                          >${buttonTitle}</a
+                                        >
+                                      </td>
                                     </tr>
                                   </tbody>
                                 </table>
@@ -34,6 +48,12 @@ const render = ({ otp = "123 456" }) => {
                             </tr>
                           </tbody>
                         </table>
+                        <p>
+                          This is a really simple email template. Its sole
+                          purpose is to get the recipient to click the button
+                          with no distractions.
+                        </p>
+                        <p>Good luck! Hope it works.</p>
                       </td>
                     </tr>
                   </table>
