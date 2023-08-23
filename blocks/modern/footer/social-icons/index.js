@@ -1,7 +1,9 @@
 const render = ({
-  address = "",
-  unsubscribeMessage = "Don't like these emails?",
-  unsubscribeUrl = "https://www.npmjs.com/package/email-designer",
+  linkedin = "",
+  whatsapp = "",
+  facebook = "",
+  instagram = "",
+  twitter = "",
 }) => {
   const rendered = `
     <!-- START SOCIAL ICONS -->
@@ -113,27 +115,31 @@ const render = ({
                                       "
                                       align="center"
                                       valign="top"
-                                    >
-                                      <td
-                                        style="
+                                    > 
+                                    ${
+                                      instagram &&
+                                      `
+                                        <td
+                                          style="
                                           word-break: break-word;
                                           vertical-align: top;
                                           padding-bottom: 0;
                                           padding-right: 2.5px;
                                           padding-left: 2.5px;
                                         "
-                                        valign="top"
-                                      >
-                                        <a
-                                          href="https://facebook.com/palta.app"
-                                          target="_blank"
-                                          ><img
-                                            width="32"
-                                            height="32"
-                                            src="https://storage.palta.app/statics/icons/facebook.png"
-                                            alt="Facebook"
-                                            title="Facebook"
-                                            style="
+                                          valign="top"
+                                        >
+                                          <a
+                                            href="${instagram}"
+                                            target="_blank"
+                                          >
+                                            <img
+                                              width="32"
+                                              height="32"
+                                              src="https://storage.palta.app/statics/icons/instagram.png"
+                                              alt="instagram"
+                                              title="instagram"
+                                              style="
                                               text-decoration: none;
                                               -ms-interpolation-mode: bicubic;
                                               margin-inline: 0.5em;
@@ -141,28 +147,35 @@ const render = ({
                                               border: 0;
                                               display: block;
                                             "
-                                        /></a>
-                                      </td>
-                                      <td
-                                        style="
+                                            />
+                                          </a>
+                                        </td>
+                                        `
+                                    }
+                                    ${
+                                      facebook &&
+                                      `
+                                        <td
+                                          style="
                                           word-break: break-word;
                                           vertical-align: top;
                                           padding-bottom: 0;
                                           padding-right: 2.5px;
                                           padding-left: 2.5px;
                                         "
-                                        valign="top"
-                                      >
-                                        <a
-                                          href="https://twitter.com/palta.app"
-                                          target="_blank"
-                                          ><img
-                                            width="32"
-                                            height="32"
-                                            src="https://storage.palta.app/statics/icons/twitter.png"
-                                            alt="Twitter"
-                                            title="Twitter"
-                                            style="
+                                          valign="top"
+                                        >
+                                          <a
+                                            href="${facebook}"
+                                            target="_blank"
+                                          >
+                                            <img
+                                              width="32"
+                                              height="32"
+                                              src="https://storage.palta.app/statics/icons/facebook.png"
+                                              alt="Facebook"
+                                              title="Facebook"
+                                              style="
                                               text-decoration: none;
                                               -ms-interpolation-mode: bicubic;
                                               margin-inline: 0.5em;
@@ -170,28 +183,35 @@ const render = ({
                                               border: 0;
                                               display: block;
                                             "
-                                        /></a>
-                                      </td>
-                                      <td
-                                        style="
+                                            />
+                                          </a>
+                                        </td>
+                                        `
+                                    }
+                                    ${
+                                      twitter &&
+                                      `
+                                        <td
+                                          style="
                                           word-break: break-word;
                                           vertical-align: top;
                                           padding-bottom: 0;
                                           padding-right: 2.5px;
                                           padding-left: 2.5px;
                                         "
-                                        valign="top"
-                                      >
-                                        <a
-                                          href="https://instagram.com/palta.app"
-                                          target="_blank"
-                                          ><img
-                                            width="32"
-                                            height="32"
-                                            src="https://storage.palta.app/statics/icons/instagram.png"
-                                            alt="Instagram"
-                                            title="Instagram"
-                                            style="
+                                          valign="top"
+                                        >
+                                          <a
+                                            href="${twitter}"
+                                            target="_blank"
+                                          >
+                                            <img
+                                              width="32"
+                                              height="32"
+                                              src="https://storage.palta.app/statics/icons/twitter.png"
+                                              alt="twitter"
+                                              title="twitter"
+                                              style="
                                               text-decoration: none;
                                               -ms-interpolation-mode: bicubic;
                                               margin-inline: 0.5em;
@@ -199,28 +219,35 @@ const render = ({
                                               border: 0;
                                               display: block;
                                             "
-                                        /></a>
-                                      </td>
-                                      <td
-                                        style="
+                                            />
+                                          </a>
+                                        </td>
+                                        `
+                                    }
+                                    ${
+                                      linkedin &&
+                                      `
+                                        <td
+                                          style="
                                           word-break: break-word;
                                           vertical-align: top;
                                           padding-bottom: 0;
                                           padding-right: 2.5px;
                                           padding-left: 2.5px;
                                         "
-                                        valign="top"
-                                      >
-                                        <a
-                                          href="https://linkedin.com/palta.app"
-                                          target="_blank"
-                                          ><img
-                                            width="32"
-                                            height="32"
-                                            src="https://storage.palta.app/statics/icons/linkedin-in.png"
-                                            alt="LinkedIn"
-                                            title="LinkedIn"
-                                            style="
+                                          valign="top"
+                                        >
+                                          <a
+                                            href="${linkedin}"
+                                            target="_blank"
+                                          >
+                                            <img
+                                              width="32"
+                                              height="32"
+                                              src="https://storage.palta.app/statics/icons/linkedin.png"
+                                              alt="linkedin"
+                                              title="linkedin"
+                                              style="
                                               text-decoration: none;
                                               -ms-interpolation-mode: bicubic;
                                               margin-inline: 0.5em;
@@ -228,29 +255,35 @@ const render = ({
                                               border: 0;
                                               display: block;
                                             "
-                                        /></a>
-                                      </td>
-                                      <td
-                                        style="
+                                            />
+                                          </a>
+                                        </td>
+                                        `
+                                    }
+                                    ${
+                                      whatsapp &&
+                                      `
+                                        <td
+                                          style="
                                           word-break: break-word;
                                           vertical-align: top;
                                           padding-bottom: 0;
                                           padding-right: 2.5px;
                                           padding-left: 2.5px;
                                         "
-                                        valign="top"
-                                      >
-                                        <a
-                                          href="https://api.whatsapp.com/send/?phone=5492617234124"
-                                          target="_blank"
-                                          rel="noopener noreferrer"
-                                          ><img
-                                            width="32"
-                                            height="32"
-                                            src="https://storage.palta.app/statics/icons/whatsapp.png"
-                                            alt="whatsapp"
-                                            title="whatsapp"
-                                            style="
+                                          valign="top"
+                                        >
+                                          <a
+                                            href="${whatsapp}"
+                                            target="_blank"
+                                          >
+                                            <img
+                                              width="32"
+                                              height="32"
+                                              src="https://storage.palta.app/statics/icons/whatsapp.png"
+                                              alt="whatsapp"
+                                              title="whatsapp"
+                                              style="
                                               text-decoration: none;
                                               -ms-interpolation-mode: bicubic;
                                               margin-inline: 0.5em;
@@ -258,8 +291,11 @@ const render = ({
                                               border: 0;
                                               display: block;
                                             "
-                                        /></a>
-                                      </td>
+                                            />
+                                          </a>
+                                        </td>
+                                        `
+                                    }
                                     </tr>
                                   </tbody>
                                 </table>
