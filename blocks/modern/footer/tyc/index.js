@@ -1,8 +1,10 @@
 const render = ({
-  address = "Palta SAS, Campus Olegario, Olegario Andrade 315, Mendoza, M5500 BDP",
+  message = "Visitá los ",
+  title = "Terminos y Condiciones",
+  url = "https://palta.app/notes/t%C3%A9rminos-y-condiciones",
 }) => {
   const rendered = `
-    <!-- START FOOTER ADDRES -->
+    <!-- START FOOTER TyC -->
             <div style="background-color: #f6f6f6">
               <div
                 class="block-grid"
@@ -88,42 +90,23 @@ const render = ({
                                 margin: 0;
                               "
                             >
+
                               <span
                                 style="
                                   font-size: 13px;
                                   mso-ansi-font-size: 14px;
                                 "
-                                >Conocé
-                                <a
+                                >${message}<a
                                   style="
                                     text-decoration: none;
                                     color: #000000;
                                     font-weight: bold;
                                   "
-                                  href="https://ayuda.palta.app/politicas-de-privacidad"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  >como cuidamos tu
-                                  Privacidad</a
-                                ></span
-                              >
-                              <span
-                                style="
-                                  font-size: 13px;
-                                  mso-ansi-font-size: 14px;
-                                "
-                                >y visitá los<a
-                                  style="
-                                    text-decoration: none;
-                                    color: #000000;
-                                    font-weight: bold;
-                                  "
-                                  href="https://ayuda.palta.app/terminos-y-condiciones"
+                                  href="${url}"
                                   target="_blank"
                                   rel="noopener noreferrer"
                                 >
-                                  Terminos y Condiciones de
-                                  Palta</a
+                                  ${title} </a
                                 ></span
                               >
                             </p>
@@ -219,7 +202,7 @@ const render = ({
                 </div>
               </div>
             </div>
-    <!-- END FOOTER ADDRES -->
+    <!-- END FOOTER TyC -->
     `;
   return rendered;
 };

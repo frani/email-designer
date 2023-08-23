@@ -1,4 +1,4 @@
-const render = ({ text = "hola mundo! " }) => {
+const render = ({ text = "hola mundo!", style = "" }) => {
   const rendered = `
     <!-- START WHITE BOX TEXT -->
              <table
@@ -21,6 +21,7 @@ const render = ({ text = "hola mundo! " }) => {
                           padding: 0px 20px 0px 20px;
                           line-height: 22px;
                           text-align: inherit;
+                          ${style}
                         "
                         height="100%"
                         valign="top"
