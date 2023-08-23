@@ -31,6 +31,12 @@ const HTML = emailDesigner.createHTML([
     },
   },
   {
+    name: "base/social-icons",
+    params: {
+      address: "olegario andrade 315",
+    },
+  },
+  {
     name: "base/footer",
     params: {
       address: "olegario andrade 315",
